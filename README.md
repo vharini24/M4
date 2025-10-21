@@ -10,6 +10,31 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```c
+
+#include <stdio.h>
+
+int main() {
+    int a = 44;
+    int b = 3;
+    int result;
+
+    result = a << b;
+    printf("Result of %d << %d is: %d\n", a, b, result);
+
+    return 0;
+}
+
+```
+
+
+
+
+
+
+
+
+
 
 ## OUTPUT
 
@@ -47,9 +72,40 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```c
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    if (num1 == num2) {
+        printf("Both numbers are equal.\n");
+    } else {
+        printf("Both numbers are not equal.\n");
+    }
+
+    return 0;
+}
+
+```
+
+
+
+
+
+
+
 
 
 ## OUTPUT
+
+
            
 ## RESULT
 
@@ -70,6 +126,36 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```c
+#include <stdio.h>
+#include <ctype.h>  
+
+int main() {
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str); 
+
+    for (int i = 0; str[i] != '\0'; i++) {
+        str[i] = tolower(str[i]);
+    }
+
+    printf("Lowercase string: %s\n", str);
+
+    return 0;
+}
+
+```
+
+
+
+
+
+
+
+
+
+
 
 ## OUTPUT
 
@@ -95,6 +181,44 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[200];
+    int i = 0, wordCount = 0;
+
+    printf("Enter a string: ");
+    scanf(" %[^\n]s", str); 
+
+    do {
+        if (str[i] == ' ' && str[i-1] != ' ' && i != 0) {
+            wordCount++;
+        }
+        i++;
+    } while (str[i] != '\0');
+
+    if (i > 0 && str[i-1] != ' ') {
+        wordCount++;
+    }
+
+    printf("Total number of words: %d\n", wordCount);
+
+    return 0;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
 
 ## OUTPUT
 
@@ -129,6 +253,48 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```c
+#include <stdio.h>
+
+int main() {
+    char c1[100], c2[100];
+    int i = 0, flag = 0;
+
+    printf("Enter the first string: ");
+    scanf(" %[^\n]", c1);
+
+    printf("Enter the second string: ");
+    scanf("%s", c2);
+
+    while (c1[i] != '\0' && c2[i] != '\0') {
+        if (c1[i] != c2[i]) {
+            flag = 1;  
+            break;     
+        }
+        i++;
+    }
+
+    if (c1[i] != '\0' || c2[i] != '\0') {
+        flag = 1;  // lengths are different
+    }
+
+    // Display result
+    if (flag == 0) {
+        printf("Strings are same.\n");
+    } else {
+        printf("Strings are not same.\n");
+    }
+
+    return 0;
+}
+```
+
+
+
+
+
+
+
 
 
 ## OUTPUT
