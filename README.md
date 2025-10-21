@@ -162,6 +162,7 @@ int main() {
 
 ## OUTPUT
 
+<img width="402" height="173" alt="image" src="https://github.com/user-attachments/assets/d61ebe68-9aef-476e-aa67-c9a8e2bfc0b4" />
 
 
 
@@ -226,7 +227,7 @@ int main() {
 
 ## OUTPUT
 
-<img width="366" height="138" alt="image" src="https://github.com/user-attachments/assets/ebf8ec75-1bed-4e07-a698-75a3f5a87a2d" />
+
 
 
 
