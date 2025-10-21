@@ -302,7 +302,9 @@ int main() {
 
 
 ## OUTPUT
- 
+
+ <img width="366" height="138" alt="image" src="https://github.com/user-attachments/assets/a8767e4d-f484-41ed-b734-a4cba6f764b2" />
+
 
 ## RESULT
 Thus the C Program to compare two strings without using strcmp() has been executed successfully.
